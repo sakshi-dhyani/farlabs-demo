@@ -90,6 +90,8 @@ public class SampleController {
 		return sampleService.allIncharges(inchargeID);
 	}
 	
+	
+	
 
 	@GetMapping("/executives/{executiveID}")
 	public ResponseEntity<Response>executives(@PathVariable ("executiveID")int executiveID){
