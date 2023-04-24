@@ -100,7 +100,7 @@ public class SampleService {
 			return new ResponseEntity<Response>(response,HttpStatus.NOT_FOUND);
 		}
 		
-		if(companyMobile==null||companyMobile.isBlank() || companyMobile.isEmpty()) {
+		if(companyMobile==null || companyMobile.isEmpty()) {
 			response.setCode(404);
 			response.setError(HttpStatus.NOT_FOUND.name());
 			response.setMessage("please enter companyNumber ");
@@ -1427,7 +1427,7 @@ public class SampleService {
 			response.setResult(null);
 			return new ResponseEntity<Response>(response,HttpStatus.NOT_FOUND);
 		}
-		if(date==null || date.isBlank() || date.isEmpty()) {
+		if(date==null || date.isEmpty()) {
 			response.setCode(404);
 			response.setError(HttpStatus.NOT_FOUND.name());
 			response.setMessage("enter date");
