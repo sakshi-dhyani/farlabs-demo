@@ -8,7 +8,7 @@ on:
 jobs:
   build:
 
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@v3
@@ -17,16 +17,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        cache: maven
-    - name: Install Maven
-      run: |
-        Invoke-WebRequest https://apache.osuosl.org/maven/maven-3/3.8.4/binaries/apache-maven-3.8.4-bin.zip -OutFile apache-maven-3.8.4-bin.zip
-        Expand-Archive apache-maven-3.8.4-bin.zip -DestinationPath "C:\Program Files\"  
-        setx /M MAVEN_HOME "C:\Program Files\apache-maven-3.8.4"
-        setx /M PATH "$env:MAVEN_HOME\bin;$env:PATH"
-      
-    
-      
+        cache: maven        
     - name: Build with Maven
       run: mvn -B package --file pom.xml   
             
