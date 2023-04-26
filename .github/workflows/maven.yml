@@ -24,9 +24,9 @@ jobs:
 
     - name: Open cmd and run jar file
       working-directory: C:\actions-runner\_work\farlabs-demo\farlabs-demo\target
-      run: cmd 
-           java -jar farelabs-0.0.1-SNAPSHOT.jar
+      run: java -jar farelabs-0.0.1-SNAPSHOT.jar
 
+           
 
 
     # - name: Run JAR
