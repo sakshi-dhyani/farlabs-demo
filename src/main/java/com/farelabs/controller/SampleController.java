@@ -29,7 +29,7 @@ public class SampleController {
 	
 	@Autowired private SampleService sampleService;
 
-	@RequestMapping("/hello")
+	@GetMapping("/hello")
 	public String hello(){
 		return "testing success";
 	}
