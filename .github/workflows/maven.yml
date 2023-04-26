@@ -25,8 +25,8 @@ jobs:
     - name: Build JAR
       run: mvn clean package    
 
-    # - name: Execute jar file
-    #   run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar &
+    - name: Execute jar file
+      run:  Taskkill /PID (netstat -ano | findstr :80) /F & java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar &
 
            
 
