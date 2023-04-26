@@ -28,15 +28,3 @@ jobs:
     # - name: Execute
     #   run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
 
-# - name: Build JAR
-#       run: mvn clean package   
-      
-  
-
-      
-    # - name: Build with Maven
-    #   run: mvn install
-    # - name: execute jar file
-    #   run: java -jar 
-
-# C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.1
