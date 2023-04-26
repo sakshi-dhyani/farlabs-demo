@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.firelabs.FarelabsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.135 s - in com.firelabs.FarelabsApplicationTests
