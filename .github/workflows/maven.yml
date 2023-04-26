@@ -20,7 +20,7 @@ jobs:
         cache: maven  
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml  
+      run: mvn install 
 
     # - name: Run JAR
     #   run: java -jar target/farelabs-0.0.1-SNAPSHOT.jar 
