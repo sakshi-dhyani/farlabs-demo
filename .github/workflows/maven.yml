@@ -25,8 +25,8 @@ jobs:
     # - name: Run JAR
     #   run: java -jar target/farelabs-0.0.1-SNAPSHOT.jar 
     
-    - name: Execute
-      run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
+    # - name: Execute
+    #   run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
 
 # - name: Build JAR
 #       run: mvn clean package   
