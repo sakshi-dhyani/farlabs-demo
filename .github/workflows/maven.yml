@@ -23,7 +23,9 @@ jobs:
       run: mvn clean install 
 
     - name: open cmd and execute file
-      run:  cmd  java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
+      run:  cd C:\actions-runner\_work\farlabs-demo\farlabs-demo\target
+      run:  cmd
+      run:  java -jar farelabs-0.0.1-SNAPSHOT.jar
 
     # - name: Run JAR
     #   run: java -jar target/farelabs-0.0.1-SNAPSHOT.jar 
