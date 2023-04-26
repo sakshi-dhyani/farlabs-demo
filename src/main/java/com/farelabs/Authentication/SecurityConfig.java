@@ -32,7 +32,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		http.csrf().disable().authorizeRequests()
 				.antMatchers( "/user/signin", 
 						"/generateOtpForResetPassword/{email}", "/verifyOtp", "/user/resetPassword","/admin/registerAdmin","/admin/signin",
-						"/user/downloadProfileImage/{imageName}","/downloadSampleImage/{imageName}","/downloadSsfImage/{imageName}")
+						"/user/downloadProfileImage/{imageName}","/downloadSampleImage/{imageName}","/downloadSsfImage/{imageName}","/hello")
 				.permitAll().anyRequest().authenticated().and().exceptionHandling()
 				.authenticationEntryPoint(this.jwtAuthenticationEntryPoint).and().sessionManagement()
 				.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
