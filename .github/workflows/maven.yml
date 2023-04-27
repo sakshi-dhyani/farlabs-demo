@@ -23,12 +23,13 @@ jobs:
       run: mvn clean install 
 
     - name: Build JAR
-      run: mvn clean package    
+      run: mvn clean package 
 
-    - name: Execute jar file
-      run: netstat -ano | findstr :80 ,Taskkill /PID 80/F, 
-           java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar 
-
+    - name: Execute
+      run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
+    
+...
+   
 
            
 
@@ -40,6 +41,11 @@ jobs:
     #   run: java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar
 
 # - name: Build JAR
-#       run: mvn clean package   
+#       run: mvn clean package 
+
+ # - name: Execute jar file
+    #   run: netstat -ano | findstr :80 ,Taskkill /PID 80/F, 
+    #        java -jar C:\actions-runner\_work\farlabs-demo\farlabs-demo\target\farelabs-0.0.1-SNAPSHOT.jar 
+
       
   
