@@ -5,6 +5,9 @@ on:
   push:
     branches: [ "main" ]
  
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -19,8 +22,8 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: maven  
-    - name: Print concurrency group
-        run: echo '${{ github.workflow }}-${{ github.ref }}'    
+    # - name: Print concurrency group
+    #   run: echo '${{ github.workflow }}-${{ github.ref }}'    
 
     - name: Build with Maven
       run: mvn --batch-mode --update-snapshots package
