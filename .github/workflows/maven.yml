@@ -23,6 +23,12 @@ jobs:
     - name: Build with Maven
       run: mvn --batch-mode --update-snapshots package
 
+    concurrency: 
+    group: ${{ github.head_ref }}
+    cancel-in-progress: true
+
+
+
     # - name: Run JAR
     #   run: java -jar target/farelabs-0.0.1-SNAPSHOT.jar   
 
