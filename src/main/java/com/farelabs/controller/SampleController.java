@@ -31,7 +31,7 @@ public class SampleController {
 
 	@GetMapping("/hello")
 	public String hello(){
-		return "testing success";
+		return "test 2 success";
 	}
 	
 	@PostMapping("/bd/addSampleDetails")
